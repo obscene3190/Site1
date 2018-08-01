@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Forma</title>
+		<link href="css/form.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="form">
+			<h1>Forma</h1>
+			<form action="#" method="post">
+				<div class="row">
+					<p><label for="login" >Login</label></p>
+					<input id="login" type="text" name="login" maxlength="30" />
+				</div>
+				<div class="row">
+					<p><label for="password" >Password</label></p>
+					<input id="password" type="password" name="password" maxlength="30" />
+				</div>
+				
+				<div class="row">
+					<p>Eval</p>
+					<label> <input type="radio" name="eval" value = "exellent" checked="checked" /> GREAT </label> <br />
+					<label> <input type="radio" name="eval" value = "good" /> SO SO </label> <br />
+					<label> <input type="radio" name="eval" value = "bad" /> BAD </label> <br />
+				</div>
+				
+				<div class="row">
+					<p>Checkboxes</p>
+					<label> <input type="checkbox" name="eva[]" value = "1" checked="checked" /> raz </label> <br />
+					<label> <input type="checkbox" name="eva[]" value = "2" /> dva </label> <br />
+					<label> <input type="checkbox" name="eva[]" value = "3" /> tri </label> <br />
+				</div>
+				
+				<div class="row">
+					<p>Who</p>
+					<select name="something">
+						<option vaule="1">me</option>
+						<option vaule="2">you</option>
+						<option vaule="3">we</option>
+					</select>
+				</div>
+				
+				<div class="row">
+					<p><label for="sp">Who we are</label></p>
+					<select id="sp" name="something[]" multiple="multiple" size="3">
+						<option vaule="1">me</option>
+						<option vaule="2">you</option>
+						<option vaule="3">we</option>
+					</select>
+				</div>
+				
+				<div class="row">
+					<p><label for="tx">Text</label></p>
+					<textarea id="tx"name="interests" rows="4" cols="45">CE Text</textarea>
+				</div>
+				<!--
+				<input type="submit" name="submit" value="Send" />
+				<input type="reset" name="reset" value="Reset" />
+				<input type="button" name="button" value="Button" />
+				<br />
+				-->
+				<input type="image" name="sent" src="images/send_btn.png" />
+			</form>
+		</div>
+	</body>
+</html>
